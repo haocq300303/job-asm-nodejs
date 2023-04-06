@@ -1,0 +1,119 @@
+<div class="slider">
+  <div class="title-slider">
+    <div class="text-animation">
+      <h5>Men Collection 2018</h5>
+      <h3>NEW ARRIVALS</h3>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="background">
+  <img src="/img/slide1.webp" alt="" />
+</div>
+
+<div id="main">
+
+  <div id="content">
+
+    <div class="content-text-img">
+      <div class="content-img">
+        <img id="image1" src="/img/ads1.jpg" alt="" />
+      </div>
+      <div class="text-content">
+        <div class="text-content-1">
+          <h2>Women</h2>
+          <p>Spring 2018</p>
+        </div>
+        <div class="content-text-2">
+          <h3>Shop Now</h3>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-text-img">
+      <div class="content-img">
+        <img id="image1" src="/img/ads2.jpg" alt="" />
+      </div>
+      <div class="text-content">
+        <div class="text-content-1">
+          <h2>Men</h2>
+          <p>Spring 2018</p>
+        </div>
+        <div class="content-text-2">
+          <h3>Shop Now</h3>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-text-img">
+      <div class="content-img">
+        <img id="image1" src="/img/ads3.jpg" alt="" />
+      </div>
+      <div class="text-content">
+        <div class="text-content-1">
+          <h2>Accessories</h2>
+          <p>New Trend</p>
+        </div>
+        <div class="content-text-2">
+          <h3>Shop Now</h3>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="product">
+    <div class="text-product">
+      <h3>Product Overview</h3>
+      <div class="menu-filter-product">
+        <div class="menu-product">
+          <ul>
+            <li><a href="">All Products</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Bag</a></li>
+            <li><a href="">Shoes</a> </li>
+            <li><a href="">Watches</a></li>
+          </ul>
+        </div>
+        <div class="filter-product">
+          <div class="filter">
+            <i class="bx bx-filter"></i>
+            <span>Filter</span>
+          </div>
+          <div class="search-filter-product">
+            <i class="bx bx-search-alt-2"></i><span>Search</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-product">
+      {{#each data}}
+        <div class="item-image-product">
+          <div class="test">
+            <img src={{this.image}} width="100%" alt="" />
+          </div>
+          <p><a onclick="showProduct()">Quick View</a></p>
+          <div class="name-item-image-product">
+            <div class="price-name-item-image-product">
+              <p>{{this.name}}</p>
+              <p>${{this.price}}</p>
+            </div>
+            <div class="heart-name-item-image-product">
+              <i id="bxs" class="bx bxs-heart"></i>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="btn-product">
+      <a href="">LOAD MORE</a>
+    </div>
+  </div>
+
+</div>

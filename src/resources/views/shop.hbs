@@ -1,0 +1,48 @@
+<div class="product">
+  <div class="text-product">
+    <h3>Product Overview</h3>
+    <div class="menu-filter-product">
+      <div class="menu-product">
+        <ul>
+          <li><a href="">All Products</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Bag</a></li>
+          <li><a href="">Shoes</a> </li>
+          <li><a href="">Watches</a></li>
+        </ul>
+      </div>
+      <div class="filter-product">
+        <div class="filter">
+          <i class="bx bx-filter"></i>
+          <span>Filter</span>
+        </div>
+        <div class="search-filter-product">
+          <i class="bx bx-search-alt-2"></i><span>Search</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="image-product">
+    {{#each data}}
+      <div class="item-image-product">
+        <div class="test">
+          <img src={{this.image}} width="100%" alt="" />
+        </div>
+        <p><a onclick="showProduct()">Quick View</a></p>
+        <div class="name-item-image-product">
+          <div class="price-name-item-image-product">
+            <p>{{this.name}}</p>
+            <p>${{this.price}}</p>
+          </div>
+          <div class="heart-name-item-image-product">
+            <i id="bxs" class="bx bxs-heart"></i>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="btn-product">
+    <a href="">LOAD MORE</a>
+  </div>
+</div>

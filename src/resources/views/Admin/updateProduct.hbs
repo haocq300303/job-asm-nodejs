@@ -1,0 +1,40 @@
+<div class="container mt-4">
+  <form method="POST" action="/admin/products/{{data._id}}?_method=PUT">
+    <h2>Update Product</h2>
+    <div class="form-group mb-3">
+      <label for="name">Name Product</label>
+      <input
+        type="text"
+        class="form-control"
+        value={{data.name}}
+        id="name"
+        name="name"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="price">Price</label>
+      <input
+        type="number"
+        class="form-control"
+        value={{data.price}}
+        id="price"
+        name="price"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="iamge">Image</label>
+      <input
+        type="text"
+        class="form-control"
+        value={{data.image}}
+        id="iamge"
+        name="image"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById("header").style.display = "none"
+</script>
